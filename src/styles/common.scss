@@ -1,0 +1,159 @@
+:root {
+    --main-color: #2249e7;
+    --text-color: #222;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #19191b;
+    max-width: 100%;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.3s;
+
+    &.light {
+        color: var(--text-color);
+        background: #ffffff;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: white;
+
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+
+.light {
+    a {
+        color: #222 !important;
+    }
+
+    svg path,
+    svg circle {
+        stroke: #2249e7;
+    }
+
+    .close-anime path {
+        fill: #2249e7 !important;
+
+    }
+
+    button {
+        background: #142978 !important;
+
+        &:hover {
+            color: white !important;
+            background: #2249e7 !important;
+        }
+    }
+
+    input {
+        color: #222;
+    }
+}
+
+p {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+
+    &.sm {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    &.bold {
+        font-weight: bold;
+    }
+
+    &.md {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+h1 {
+    font-family: "Days One", "Futura PT";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 155%;
+    text-align: center;
+    text-transform: uppercase;
+
+    &.sm {
+        font-size: 36px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
+}
+
+button {
+    padding: 24px 60px;
+    background: var(--main-color);
+    border-radius: 10px;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 170%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    @media (max-width: 767px) {
+        padding: 20px 40px !important;
+        font-size: 18px !important;
+    }
+
+    transition: all 0.3s;
+
+    &:hover {
+        color: #222 !important;
+        background: #fff !important;
+    }
+}
+
+input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #2249e7;
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 10px;
+    padding: 30px 20px;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+
+    @media (max-width: 767px) {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    outline: none;
+}

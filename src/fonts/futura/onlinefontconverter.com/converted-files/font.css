@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'FuturaPT-Book';
+  src: url('FuturaPT-Book.eot');
+  src: url('FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+       url('FuturaPT-Book.svg#FuturaPT-Book') format('svg'),
+       url('FuturaPT-Book.ttf') format('truetype'),
+       url('FuturaPT-Book.woff') format('woff'),
+       url('FuturaPT-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

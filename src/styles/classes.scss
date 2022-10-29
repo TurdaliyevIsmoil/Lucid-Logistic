@@ -1,0 +1,166 @@
+.container {
+    @media (min-width: 1600px) {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 1600px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media (max-width: 1024px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.devider {
+    display: block;
+    padding: 60px 0;
+
+    &.half {
+        padding: 30px 0;
+
+        @media (max-width: 767px) {
+            padding: 15px 0;
+        }
+    }
+
+    @media (max-width: 1340px) {
+        padding: 50px 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-blue {
+    color: #2249e7;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+
+    &.align-start {
+        align-items: flex-start;
+    }
+
+    &.align-end {
+        align-items: flex-end;
+    }
+
+    &.justify-center {
+        justify-content: center;
+    }
+
+    &.justify-start {
+        justify-content: flex-start;
+    }
+
+    &.justify-between {
+        justify-content: space-between;
+    }
+
+    &.justify-end {
+        justify-content: flex-end;
+    }
+}
+
+.block {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    transition: all 0.3s;
+    border-radius: 10px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+}
+
+.light .block {
+    background: #f1f1f1 !important;
+}
+
+.circle-anime {
+    position: absolute;
+    overflow: visible;
+
+    circle:first-child {
+        animation: Circle1-animation 4s linear infinite alternate;
+    }
+
+    circle:last-child {
+        animation: Circle2-animation 4s linear infinite alternate;
+    }
+}
+
+.play-anime {
+    position: absolute;
+    overflow: visible;
+
+    path:first-child {
+        animation: Circle1-animation 4s linear infinite alternate;
+    }
+
+    path:last-child {
+        animation: Circle2-animation 4s linear infinite alternate;
+    }
+}
+
+.close-anime {
+    position: absolute;
+    animation: Close-animation 3s linear infinite alternate;
+}
+
+@keyframes Circle1-animation {
+    from {
+        transform: translate(15px, 15px);
+    }
+
+    to {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes Circle2-animation {
+    from {
+        transform: translate(-15px, -15px);
+    }
+
+    to {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes Close-animation {
+    from {
+        transform: scale(0.6) rotate(180deg);
+    }
+
+    to {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+.mapboxgl-ctrl-attrib-button {
+    display: none !important;
+}
